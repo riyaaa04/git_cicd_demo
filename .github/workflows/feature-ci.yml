@@ -1,9 +1,9 @@
-name: Feature Cicd Development
+name: Feature CICD Development
 
 on:
   push:
-      branches:
-        -feature**
+    branches:
+      - 'feature**' f
 
 jobs:
   ci:
@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: runtest
-        run: echo "deploying on to the feature branch"
+      - name: Run Test
+        run: echo "Deploying onto the feature branch"
